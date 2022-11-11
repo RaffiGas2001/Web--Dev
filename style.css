@@ -129,7 +129,7 @@
 
 #header3{
 	width: 100%;
-	height: 700px;
+	/* height: 700px; */
 	/*border: 1px solid black;*/
 	display: flex;
 	flex-direction: column;
@@ -143,7 +143,7 @@
 
 .header3-1{
 	width: 50%;
-	height: 250px;
+	/* height: 250px; */
 	/*border: 1px solid black;*/
 	display: flex;
 	justify-content: space-evenly;
@@ -152,24 +152,25 @@
 .header3-1-1{
 	width: 300px;
 	height: 220px;
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
 	padding: 10px;
-	box-shadow: 5px 10px 10px #888888;
+	/* box-shadow: 5px 10px 10px #888888; */
 }
 
-.header3-1-1 h1,p,a{
+.header3-1-1 h1,p{
 	font-family: Arial;
 }
 
-.header3-1-1 p{
+.header3-1-1 h4{
 	color: brown;
+	cursor: pointer;
 }
 
-.header3-1-1 a{
-	color: lightgreen;
+.header3-1-1 h4{
+	color: black;
 }
 
 .header3-1-2{
@@ -182,8 +183,9 @@
 	padding: 10px;
 }
 
-.header3-1-2 a{
+.header3-1-2 h4{
 	color: black;
+	cursor: pointer;
 }
 
 .header3-2{
@@ -204,7 +206,7 @@
 	padding: 10px;
 }
 
-.header3-2-1 a{
+.header3-2-1 h4{
 	color: black;
 }
 
@@ -218,8 +220,16 @@
 	padding: 10px;
 }
 
-.header3-2-2 a{
+.header3-2-2 h4{
 	color: black;
+}
+
+.header3-1-1:hover, .header3-1-2:hover, .header3-2-1:hover, .header3-2-2:hover{
+	box-shadow: 5px 10px 10px #888888;
+}
+
+.header3-1-1 h4:hover,.header3-1-2 h4:hover,.header3-2-1 h4:hover,.header3-2-2 h4:hover{
+	color: lightgreen;
 }
 
 #header3 button{
@@ -508,13 +518,13 @@
 .header6-1-2{
 	width: 27%;
 	height: 350px;
-	/*border: 1px solid black;*/
+	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
 	border-color: silver;
-	box-shadow: 0px 25px 10px #888888;
+	/* box-shadow: 0px 25px 10px #888888; */
 }
 
 .header6-1-2 h2, h1, p, button{
@@ -526,10 +536,6 @@
 	padding: 10px;
 	background: white;
 	cursor: pointer;
-	background: lightgreen;
-	color: white;
-	border-color: lightgreen;
-	box-shadow: 0px 15px 10px #888888;
 }
 
 .header6-1-3{
@@ -541,6 +547,17 @@
 	align-items: center;
 	justify-content: space-evenly;
 	border-color: silver;
+}
+
+.header6-1-1:hover, .header6-1-2:hover, .header6-1-3:hover{
+	box-shadow: 0px 25px 10px #888888;
+}
+
+.header6-1-1 button:hover, .header6-1-2 button:hover, .header6-1-3 button:hover{
+	background: lightgreen;
+	color: white;
+	border-color: lightgreen;
+	box-shadow: 0px 15px 10px #888888;
 }
 
 .header6-1-3 h2, h1, p, button{
